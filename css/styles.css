@@ -15,6 +15,23 @@
   --mail-phone-footer: rgba(255, 255, 255, 0.6);
 }
 
+/* сброс стандартных параметров */
+
+h2 {
+  margin: 50px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
 body {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
@@ -53,6 +70,9 @@ body {
   line-height: 1.19;
 
   text-decoration: none;
+
+  /* убрать фон !!!!!!!!!!!!!!!!!! */
+  background-color: tomato;
 }
 
 .logo-header {
@@ -71,7 +91,6 @@ body {
   line-height: 1.14;
 
   text-decoration: none;
-
 }
 
 .header-contact {
@@ -95,7 +114,8 @@ body {
   color: var(--accent-color);
 }
 
-.header-list .header-link.current {
+/* выбор текущей страницы */
+.header .header-link.current {
   color: var(--accent-color);
 }
 
@@ -108,17 +128,22 @@ body {
   text-transform: uppercase;
 
   color: var(--primary-color);
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero {
   background-color: var(--hero-background);
+  width: 1600px;
+  height: 600px;
 }
 
 /* footer */
 
 .footer {
   background-color: var(--hero-background);
-
 }
 
 .address-footer {
@@ -217,6 +242,10 @@ body {
   font-family: inherit;
   font-weight: 700;
   line-height: 1.88;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-hero:hover,
