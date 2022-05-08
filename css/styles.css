@@ -53,6 +53,17 @@ body {
   margin: -1px;
 }
 
+.container {
+  outline: 5px solid red;
+
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header-list,
 .header-group,
 .section-list,
@@ -61,6 +72,8 @@ body {
 }
 
 /* разделение по блокам */
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .header {
   display: flex;
   justify-content: space-around;
@@ -80,21 +93,25 @@ body {
 .header-list,
 .header-group {
   display: flex;
-  /* justify-content: flex-start; 
-  не работает ????? */
-  outline: 5px solid rgb(243, 239, 245);
-  background-color: #2F303A;
+
+  justify-content: flex-start; 
+  не работает ????? 
+
+outline: 5px solid rgb(243, 239, 245);
+background-color: #2F303A;
 }
 
 .header-item
 
-/* :not(:last-child)
-не работает ???????? */
-  {
+:not(:last-child)
+не работает ????????
+
+{
   outline: 5px solid rgb(47, 0, 255);
   margin-right: 50px;
   background-color: aqua;
 }
+*/
 
 
 /* Logo */
@@ -107,10 +124,11 @@ body {
 
   text-decoration: none;
 
-  margin-right: 90px;
 
   /* убрать фон !!!!!!!!!!!!!!!!!! */
-  background-color: tomato;
+
+  /* margin-right: 90px; */
+  /* background-color: tomato; */
 }
 
 .logo-header {
@@ -168,14 +186,17 @@ body {
   color: var(--primary-color);
 
   margin-bottom: 30px;
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .hero {
   background-color: var(--hero-background);
+
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   width: 600px;
-  height: 600px;
+  height: 600px; */
 }
 
 /* footer */
