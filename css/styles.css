@@ -74,21 +74,9 @@ body {
 /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-.header-list,
-.header-group {
-  display: flex;
 
-  justify-content: flex-start; 
-  не работает ????? 
-
-outline: 5px solid rgb(243, 239, 245);
-background-color: #2F303A;
 }
 
-.header-item
-
-:not(:last-child)
-не работает ????????
 
 {
   outline: 5px solid rgb(47, 0, 255);
@@ -141,7 +129,15 @@ background-color: #2F303A;
 
 .header-mail-phone {
   margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  outline: 2px solid red;
+  text-decoration: none;
 }
+
+
 
 .header-link {
   color: var(--primary-text-color);
@@ -149,6 +145,9 @@ background-color: #2F303A;
   font-size: 14px;
   line-height: 1.14;
 
+  display: block;
+  padding: 32px 0;
+  outline: 2px solid red;
   text-decoration: none;
 }
 
@@ -158,6 +157,10 @@ background-color: #2F303A;
   font-size: 14px;
   line-height: 1.14;
 
+  display: block;
+  padding: 32px 0;
+
+  outline: 2px solid red;
   text-decoration: none;
 }
 
@@ -171,6 +174,17 @@ background-color: #2F303A;
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+
+  outline: 5px solid rgb(243, 239, 245);
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* выбор текущей страницы */
