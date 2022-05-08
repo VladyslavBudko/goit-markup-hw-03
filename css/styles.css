@@ -25,12 +25,12 @@ h3 {
   margin-bottom: 10px;
 }
 
-ul,
+/* ul,
 ol {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
-}
+} */
 
 body {
   background-color: var(--primary-color);
@@ -60,6 +60,42 @@ body {
   list-style: none;
 }
 
+/* разделение по блокам */
+.header {
+  display: flex;
+  justify-content: space-around;
+
+  outline: 5px solid rgb(60, 255, 0);
+  background-color: rgb(229, 255, 0);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  outline: 5px solid rgb(255, 0, 25);
+  background-color: rgb(20, 138, 91);
+}
+
+.header-list,
+.header-group {
+  display: flex;
+  /* justify-content: flex-start; 
+  не работает ????? */
+  outline: 5px solid rgb(243, 239, 245);
+  background-color: #2F303A;
+}
+
+.header-item
+
+/* :not(:last-child)
+не работает ???????? */
+  {
+  outline: 5px solid rgb(47, 0, 255);
+  margin-right: 50px;
+  background-color: aqua;
+}
+
 
 /* Logo */
 .logo {
@@ -70,6 +106,8 @@ body {
   line-height: 1.19;
 
   text-decoration: none;
+
+  margin-right: 90px;
 
   /* убрать фон !!!!!!!!!!!!!!!!!! */
   background-color: tomato;
@@ -136,7 +174,7 @@ body {
 
 .hero {
   background-color: var(--hero-background);
-  width: 1600px;
+  width: 600px;
   height: 600px;
 }
 
