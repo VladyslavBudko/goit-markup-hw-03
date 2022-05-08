@@ -25,12 +25,16 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* ul,
+ul,
 ol {
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
-} */
+  margin: 0;
+}
+
+img {
+  display: block;
+}
 
 body {
   background-color: var(--primary-color);
@@ -53,6 +57,8 @@ body {
   margin: -1px;
 }
 
+/* разделение по блокам */
+
 .container {
   outline: 5px solid red;
 
@@ -64,31 +70,9 @@ body {
   margin-right: auto;
 }
 
-.header-list,
-.header-group,
-.section-list,
-.address-list {
-  list-style: none;
-}
-
-/* разделение по блокам */
 
 /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-.header {
-  display: flex;
-  justify-content: space-around;
 
-  outline: 5px solid rgb(60, 255, 0);
-  background-color: rgb(229, 255, 0);
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-
-  outline: 5px solid rgb(255, 0, 25);
-  background-color: rgb(20, 138, 91);
-}
 
 .header-list,
 .header-group {
@@ -124,11 +108,7 @@ background-color: #2F303A;
 
   text-decoration: none;
 
-
-  /* убрать фон !!!!!!!!!!!!!!!!!! */
-
-  /* margin-right: 90px; */
-  /* background-color: tomato; */
+  margin-right: 90px;
 }
 
 .logo-header {
@@ -139,7 +119,30 @@ background-color: #2F303A;
   color: var(--primary-color);
 }
 
+/* Header !!!!!!!!!!!!!!!! */
+
+.header-container {
+  display: flex;
+  align-items: center;
+
+  outline: 5px solid rgb(60, 255, 0);
+  background-color: rgb(229, 255, 0);
+}
+
 /* site nav */
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+
+  outline: 5px solid rgb(255, 0, 25);
+  background-color: rgb(20, 138, 91);
+}
+
+.header-mail-phone {
+  margin-left: auto;
+}
+
 .header-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -186,9 +189,7 @@ background-color: #2F303A;
   color: var(--primary-color);
 
   margin-bottom: 30px;
-  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  margin-left: auto;
-  margin-right: auto; */
+
 }
 
 .hero {
