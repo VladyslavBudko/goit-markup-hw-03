@@ -19,9 +19,18 @@
  Питання до ментора!!!!!!!!!!!!!*/
 
 /* сброс стандартных параметров */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
 h2 {
-  margin: 50px;
+  margin-bottom: 50px;
 }
 
 h3 {
@@ -58,6 +67,10 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 /* разделение по блокам */
@@ -183,28 +196,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* footer */
-
-.footer {
-  background-color: var(--hero-background);
-}
-
-.address-footer {
-  color: var(--primary-color);
-  font-size: 14px;
-  line-height: 1.71px;
-  font-style: normal;
-}
-
-.footer-contact {
-  color: var(--mail-phone-footer);
-  font-size: 14px;
-  line-height: 1.71px;
-
-  text-decoration: none;
-  font-style: normal;
-}
-
 .address-footer:hover,
 .address-footer:focus,
 .footer-contact:hover,
@@ -294,10 +285,7 @@ body {
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 294px;
-
-  /* Питання до ментора!!!!!!!!!!!!!
-  не розумію, чому не працює margin-bottom: 294px; */
+  margin-bottom: 200px;
 }
 
 .button-hero:hover,
@@ -326,4 +314,27 @@ body {
 .button-filter:focus {
   color: var(--primary-color);
   background-color: var(--accent-color);
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--hero-background);
+  padding: 60px 0;
+}
+
+.address-footer {
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 1.71px;
+  font-style: normal;
+}
+
+.footer-contact {
+  color: var(--mail-phone-footer);
+  font-size: 14px;
+  line-height: 1.71px;
+
+  text-decoration: none;
+  font-style: normal;
 }
