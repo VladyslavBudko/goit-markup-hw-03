@@ -268,19 +268,34 @@ body {
 
 .section-item {
   background-color: var(--primary-color);
+
+  width: 270px;
+  height: 368px;
 }
 
 .team .section-title {
   color: var(--primary-text-color);
 
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team .section-description {
   color: var(--text-description-color);
   font-size: 14px;
   line-height: 1.19;
+  text-align: center;
+}
+
+.team .section-img {
+  margin-bottom: 30px;
+}
+
+.team .section-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* portfolio projekts */
