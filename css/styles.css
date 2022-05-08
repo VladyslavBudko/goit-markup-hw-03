@@ -15,6 +15,9 @@
   --mail-phone-footer: rgba(255, 255, 255, 0.6);
 }
 
+/* Іноді є питання, позначені:
+ Питання до ментора!!!!!!!!!!!!!*/
+
 /* сброс стандартных параметров */
 
 h2 {
@@ -70,22 +73,6 @@ body {
   margin-right: auto;
 }
 
-
-/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
-}
-
-
-{
-  outline: 5px solid rgb(47, 0, 255);
-  margin-right: 50px;
-  background-color: aqua;
-}
-*/
-
-
 /* Logo */
 .logo {
   color: var(--accent-color);
@@ -107,14 +94,11 @@ body {
   color: var(--primary-color);
 }
 
-/* Header !!!!!!!!!!!!!!!! */
+/* Header */
 
 .header-container {
   display: flex;
   align-items: center;
-
-  outline: 5px solid rgb(60, 255, 0);
-  background-color: rgb(229, 255, 0);
 }
 
 /* site nav */
@@ -122,9 +106,6 @@ body {
 .navigation-container {
   display: flex;
   align-items: center;
-
-  outline: 5px solid rgb(255, 0, 25);
-  background-color: rgb(20, 138, 91);
 }
 
 .header-mail-phone {
@@ -132,12 +113,7 @@ body {
 
   display: flex;
   align-items: center;
-
-  outline: 2px solid red;
-  text-decoration: none;
 }
-
-
 
 .header-link {
   color: var(--primary-text-color);
@@ -147,7 +123,6 @@ body {
 
   display: block;
   padding: 32px 0;
-  outline: 2px solid red;
   text-decoration: none;
 }
 
@@ -160,7 +135,6 @@ body {
   display: block;
   padding: 32px 0;
 
-  outline: 2px solid red;
   text-decoration: none;
 }
 
@@ -179,8 +153,6 @@ body {
 .header-list {
   display: flex;
   align-items: center;
-
-  outline: 5px solid rgb(243, 239, 245);
 }
 
 .header-item:not(:last-child) {
@@ -193,6 +165,12 @@ body {
 }
 
 /* hero */
+
+.hero {
+  background-color: var(--hero-background);
+  height: 600px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -201,17 +179,8 @@ body {
   text-transform: uppercase;
 
   color: var(--primary-color);
-
+  padding-top: 200px;
   margin-bottom: 30px;
-
-}
-
-.hero {
-  background-color: var(--hero-background);
-
-  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  width: 600px;
-  height: 600px; */
 }
 
 /* footer */
@@ -318,8 +287,17 @@ body {
   line-height: 1.88;
 
   display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 294px;
+
+  /* Питання до ментора!!!!!!!!!!!!!
+  не розумію, чому не працює margin-bottom: 294px; */
 }
 
 .button-hero:hover,
