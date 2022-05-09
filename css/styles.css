@@ -177,7 +177,24 @@ body {
   color: var(--accent-color);
 }
 
+.address-footer:hover,
+.address-footer:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+
 /* hero */
+.hero-container {
+  outline: 5px solid red;
+
+  width: 1200px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding: 200px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .hero {
   background-color: var(--hero-background);
@@ -192,16 +209,39 @@ body {
   text-transform: uppercase;
 
   color: var(--primary-color);
-  padding-top: 200px;
+  /* padding-top: 200px; */
   margin-bottom: 30px;
 }
 
-.address-footer:hover,
-.address-footer:focus,
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--accent-color);
+.button-hero {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  text-decoration: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.88;
+
+  display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  border: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 200px; */
 }
+
+.button-hero:hover,
+.button-hero:focus {
+  color: var(--primary-color);
+  background-color: var(--hero-button-hover);
+}
+
+
 
 /* Особенности features  */
 .section-uppertitle {
@@ -248,9 +288,6 @@ body {
 
 /* Чем мы занимаемся */
 
-/* .doing .section-list {
-  display: flex;
-} */
 
 .doing .section-list {
   display: flex;
@@ -258,9 +295,9 @@ body {
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.doing .section-item:not(:last-child) {
+/* .doing .section-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 
 /* team */
@@ -320,32 +357,7 @@ body {
 
 /* Button */
 
-.button-hero {
-  color: var(--primary-color);
-  background-color: var(--accent-color);
-  text-decoration: none;
-  cursor: pointer;
 
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 1.88;
-
-  display: block;
-  padding: 10px 32px;
-  border-radius: 4px;
-  min-width: 200px;
-  min-height: 50px;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
-}
-
-.button-hero:hover,
-.button-hero:focus {
-  color: var(--primary-color);
-  background-color: var(--hero-button-hover);
-}
 
 .button-filter {
   color: var(--primary-text-color);
@@ -375,14 +387,16 @@ body {
   background-color: var(--hero-background);
 
   height: 252px;
-  padding: 60px 0;
+  padding-top: 60px;
 }
 
 .address-footer {
   color: var(--primary-color);
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
+
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .footer-contact {
@@ -392,19 +406,16 @@ body {
 
   text-decoration: none;
   font-style: normal;
+
 }
 
-/* .footer-container {
-  display: flex;
-  flex-direction: column;
-  padding: 45px 0;
-} */
-
 .footer .logo {
+  display: block;
   margin-bottom: 20px;
   margin-right: 0;
 }
 
-.address-footer {
+.address-item {
+
   margin-bottom: 9px;
 }
