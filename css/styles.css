@@ -465,6 +465,14 @@ body {
   margin-bottom: 30px;
 }
 
+/* 
+Питання до ментора ! ! ! ! ! ! ! ! ! ! ! ! !
+
+«B17» потрібно <li class="section-item"> обгорнути в div елементи h2,p але навіщо?
+Простіше в .projects .section-item задати 
+outline: 1px solid var(--projects-border-color);
+*/
+
 .projects .section-item:nth-child(3n) {
   margin-right: 0;
 }
