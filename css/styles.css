@@ -232,7 +232,6 @@ body {
 
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 200px; */
 }
 
 .button-hero:hover,
@@ -240,8 +239,6 @@ body {
   color: var(--primary-color);
   background-color: var(--hero-button-hover);
 }
-
-
 
 /* Особенности features  */
 .section-uppertitle {
@@ -280,9 +277,11 @@ body {
 
 /* 
 Питання до ментора ! ! ! ! ! ! ! ! ! ! ! ! !
-Який варіант вирівнювання краще?
+Який варіант вирівнювання краще використовувати?
 
-.features .section-item:not(:last-child) {
+1) justify-content: space-between;
+
+2) .features .section-item:not(:last-child) {
   margin-right: 30px;
 } */
 
@@ -340,47 +339,6 @@ body {
   justify-content: space-between;
 }
 
-/* portfolio projekts */
-
-.projects .section-title {
-  color: var(--primary-text-color);
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
-
-.projects .section-description {
-  color: var(--text-description-color);
-  line-height: 1.88;
-}
-
-/* Button */
-
-
-
-.button-filter {
-  color: var(--primary-text-color);
-  background-color: var(--secondary-background);
-  text-decoration: none;
-  cursor: pointer;
-
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.62;
-}
-
-.button-filter.active {
-  color: var(--primary-color);
-  background-color: var(--accent-color);
-}
-
-.button-filter:hover,
-.button-filter:focus {
-  color: var(--primary-color);
-  background-color: var(--accent-color);
-}
-
 /* footer */
 
 .footer {
@@ -406,7 +364,6 @@ body {
 
   text-decoration: none;
   font-style: normal;
-
 }
 
 .footer .logo {
@@ -416,6 +373,62 @@ body {
 }
 
 .address-item {
-
   margin-bottom: 9px;
+}
+
+
+/* ---------------------------------------------
+ portfolio projekts 
+ ---------------------------------------------*/
+
+.projects .section-title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.projects .section-description {
+  color: var(--text-description-color);
+  line-height: 1.88;
+}
+
+/* Button */
+
+.button-filter {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background);
+  text-decoration: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.62;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  min-width: 50px;
+  min-height: 38px;
+  border: 0;
+}
+
+.filter .section-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-filter.active,
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
