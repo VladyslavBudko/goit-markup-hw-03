@@ -248,18 +248,20 @@ body {
 
 /* Чем мы занимаемся */
 
+/* .doing .section-list {
+  display: flex;
+} */
+
 .doing .section-list {
   display: flex;
   justify-content: space-between;
 }
 
-/* 
-Питання до ментора ! ! ! ! ! ! ! ! ! ! ! ! ! 
-Який варіант вирівнювання краще?
-
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .doing .section-item:not(:last-child) {
   margin-right: 30px;
-} */
+}
+
 
 /* team */
 .team {
@@ -268,6 +270,9 @@ body {
 
 .section-item {
   background-color: var(--primary-color);
+}
+
+.team .section-item {
 
   width: 270px;
   height: 368px;
@@ -368,6 +373,8 @@ body {
 
 .footer {
   background-color: var(--hero-background);
+
+  height: 252px;
   padding: 60px 0;
 }
 
@@ -385,4 +392,19 @@ body {
 
   text-decoration: none;
   font-style: normal;
+}
+
+/* .footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 0;
+} */
+
+.footer .logo {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.address-footer {
+  margin-bottom: 9px;
 }
