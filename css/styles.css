@@ -13,6 +13,8 @@
 
   --logo-header: #000000;
   --mail-phone-footer: rgba(255, 255, 255, 0.6);
+
+  --projects-border-color: #eeeeee;
 }
 
 /* Іноді є питання, позначені:
@@ -394,7 +396,7 @@ body {
   line-height: 1.88;
 }
 
-/* Button */
+/* Button filter*/
 
 .button-filter {
   color: var(--primary-text-color);
@@ -413,10 +415,6 @@ body {
   border: 0;
 }
 
-.filter .section-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .button-filter.active,
 .button-filter:hover,
 .button-filter:focus {
@@ -431,4 +429,36 @@ body {
 
   margin-top: 94px;
   margin-bottom: 50px;
+}
+
+.filter .section-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Projects */
+
+h2 {
+  margin: 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .section-item {
+  width: 370px;
+  height: 404px;
+  outline: 1px solid var(--projects-border-color);
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects .section-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects .section-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
 }
