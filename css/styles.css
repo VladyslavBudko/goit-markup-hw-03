@@ -59,6 +59,7 @@ body {
 
   font-family: Roboto, sans-serif;
   font-size: 16px;
+  letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -81,7 +82,7 @@ body {
 /* разделение по блокам */
 
 .container {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
   width: 1200px;
   padding-left: 15px;
@@ -92,6 +93,7 @@ body {
 }
 
 /* Logo */
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway, cursive;
@@ -99,10 +101,10 @@ body {
   font-size: 26px;
   line-height: 1.19;
 
-  padding: 32px 0;
   text-decoration: none;
 
   margin-right: 90px;
+  padding: 20px 0;
 }
 
 .logo-header {
@@ -112,7 +114,7 @@ body {
 
 .logo-footer {
   color: var(--primary-color);
-  padding: 32px 0;
+  padding: 20px 0;
 }
 
 /* Header */
@@ -141,6 +143,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 
   display: block;
   padding: 32px 0;
@@ -152,6 +155,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 
   display: block;
   padding: 32px 0;
@@ -185,6 +189,7 @@ body {
 }
 
 /* выбор текущей страницы */
+
 .header .header-link.current {
   color: var(--accent-color);
 }
@@ -216,9 +221,9 @@ body {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 
   color: var(--primary-color);
-  /* padding-top: 200px; */
   margin-bottom: 30px;
 }
 
@@ -231,6 +236,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   line-height: 1.88;
+  letter-spacing: 0.06em;
 
   display: block;
   padding: 10px 32px;
@@ -257,6 +263,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .features .section-title {
@@ -266,6 +273,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .features .section-description {
@@ -316,6 +324,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-description {
@@ -323,6 +332,7 @@ body {
   font-size: 14px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-img {
@@ -363,8 +373,8 @@ body {
 .footer {
   background-color: var(--hero-background);
 
-  height: 252px;
-  padding-top: 60px;
+  /* height: 252px; */
+  padding: 60px 0;
 }
 
 .address-footer {
@@ -387,7 +397,6 @@ body {
 
 .footer .logo {
   display: block;
-  margin-bottom: 20px;
   margin-right: 0;
 }
 
@@ -400,7 +409,7 @@ body {
  portfolio projekts 
  ---------------------------------------------*/
 
-.projects .section-title {
+.projects-title {
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -408,12 +417,28 @@ body {
   line-height: 2;
 }
 
-.projects .section-description {
+.projects-description {
   color: var(--text-description-color);
   line-height: 1.88;
 }
 
 /* Button filter*/
+
+.filter.container {
+  margin-top: 94px;
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.filter .section-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .button-filter {
   color: var(--primary-text-color);
@@ -439,60 +464,60 @@ body {
   background-color: var(--accent-color);
 }
 
-.filter-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
-
-.filter .section-item:not(:last-child) {
-  margin-right: 8px;
-}
 
 /* Projects */
 
-/* Питання до ментора ! ! ! ! ! ! ! ! ! ! ! ! !
-Хотів взяти для проекту h3, але на попередньому ДЗ сказали виправити на h2.
-Чи можна використовувати в даному випадку h3?
-*/
 .projects h2 {
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 
-.projects p {
-  margin-bottom: 20px;
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.projects-container {
+.projects-description {
+  color: var(--text-description-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.projects-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: calc(-1* var(--card-set-gap));
+  margin-top: calc(-1* var(--card-set-gap));
 }
 
-.projects .section-item {
-  width: 370px;
-  height: 404px;
-  outline: 1px solid var(--projects-border-color);
-
-  margin-right: 30px;
-  margin-bottom: 30px;
+.projects-item {
+  flex-basis: calc(100%/3- var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
-/* 
-Питання до ментора ! ! ! ! ! ! ! ! ! ! ! ! !
+/* .projects-item * {
+  outline: 1px solid tomato;
+} */
 
-«B17» потрібно <li class="section-item"> обгорнути в div елементи h2,p але навіщо?
-Простіше в .projects .section-item задати 
-outline: 1px solid var(--projects-border-color);
-*/
-
-.projects .section-item:nth-child(3n) {
-  margin-right: 0;
+.projects-content {
+  padding: 20px 24px;
+  /* outline: 1px solid var(--projects-border-color); */
+  border: 1px solid var(--projects-border-color);
 }
 
-.projects .section-item:nth-last-child(-n+3) {
-  margin-bottom: 0;
+.projects-card {
+  /* box-shadow: ; */
+  border-radius: 4px;
+  overflow: hidden;
 }
