@@ -75,7 +75,7 @@ body {
 }
 
 .section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 /* разделение по блокам */
@@ -302,17 +302,12 @@ body {
 
 .team {
   background-color: var(--secondary-background);
+  padding-top: 94px;
 }
 
 .team-item {
   background-color: var(--primary-color);
 }
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-.team-item {
-  width: 270px;
-  height: 368px;
-} */
 
 .team-title {
   color: var(--primary-text-color);
@@ -330,14 +325,10 @@ body {
   text-align: center;
 }
 
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .team-img {
   display: block;
   max-width: 100%;
   height: auto;
-
-  /* margin-bottom: 30px; */
 }
 
 .team-list {
@@ -353,9 +344,18 @@ body {
   margin-top: var(--card-set-gap);
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.team-item * {
+/* .team-item * {
   outline: 1px solid tomato;
+} */
+
+.team-content {
+  padding: 30px;
+}
+
+.team-card {
+  /* box-shadow: ; */
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 /* footer */
