@@ -82,8 +82,6 @@ body {
 /* разделение по блокам */
 
 .container {
-  outline: 1px solid red;
-
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -311,7 +309,6 @@ body {
 
 .team {
   background-color: var(--secondary-background);
-  padding-top: 94px;
 }
 
 .team-item {
@@ -354,10 +351,6 @@ body {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
-
-/* .team-item * {
-  outline: 1px solid tomato;
-} */
 
 .team-content {
   padding: 30px;
@@ -422,11 +415,11 @@ body {
   line-height: 1.88;
 }
 
-/* Button filter*/
-
-.filter.container {
-  margin-top: 94px;
+.projects.section {
+  padding-top: 94px;
 }
+
+/* Button filter*/
 
 .filter-list {
   display: flex;
@@ -501,19 +494,15 @@ body {
 }
 
 .projects-item {
-  flex-basis: calc(100%/3- var(--card-set-gap));
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
 
-/* .projects-item * {
-  outline: 1px solid tomato;
-} */
-
 .projects-content {
   padding: 20px 24px;
-  /* outline: 1px solid var(--projects-border-color); */
   border: 1px solid var(--projects-border-color);
+  border-top: 0;
 }
 
 .projects-card {
