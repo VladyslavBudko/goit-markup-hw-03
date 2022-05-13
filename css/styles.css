@@ -82,7 +82,7 @@ body {
 /* разделение по блокам */
 
 .container {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 
   width: 1200px;
   padding-left: 15px;
@@ -109,12 +109,10 @@ body {
 
 .logo-header {
   color: var(--logo-header);
-  padding: 32px 0;
 }
 
 .logo-footer {
   color: var(--primary-color);
-  padding: 20px 0;
 }
 
 /* Header */
@@ -212,7 +210,6 @@ body {
   background-color: var(--hero-background);
   height: 600px;
   padding: 200px 15px;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -256,6 +253,10 @@ body {
 }
 
 /* Особенности features  */
+.features {
+  padding-top: 94px;
+}
+
 .section-uppertitle {
   color: var(--primary-text-color);
 
@@ -372,8 +373,6 @@ body {
 
 .footer {
   background-color: var(--hero-background);
-
-  /* height: 252px; */
   padding: 60px 0;
 }
 
@@ -398,12 +397,13 @@ body {
 .footer .logo {
   display: block;
   margin-right: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-.address-item {
+.address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 
 /* ---------------------------------------------
  portfolio projekts 
