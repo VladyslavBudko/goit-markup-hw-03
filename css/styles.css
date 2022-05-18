@@ -77,6 +77,7 @@ body {
 
 .section {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /* разделение по блокам */
@@ -207,7 +208,7 @@ body {
 .hero {
   background-color: var(--hero-background);
   height: 600px;
-  padding: 200px 15px;
+  padding: 200px;
 }
 
 .hero-title {
